@@ -1,62 +1,44 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Дмитро Турчинський</title>
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <h1> Звіти з лабораторних робіт з дисципліни "Проектування web-застосунків"</h1>
-            <p>
-                Виконавець: Студент групи ІП-зп51 Турчинський Дмитро Юрійович
-            </p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Дмитро Турчинський</title>
+    </head>
+    <body class="grid grid_main">
+        <header class="grid grid_h">
+            <h1 class="text">Звіт з лабораторних робіт з дисципліни "Проєктування WEB-застосунків"</h1>
+            <h2 class="text">Виконавець: Студент групи ІП-зп51 Турчинський Дмитро Юрійович</h2>
+            <img class="avatar" src="./media/avatar.jpg" alt="MyPhoto" class="avatar">
         </header>
-        <img id="avatar" src="./media/photo.jpg" alt="Моє фото" height="200" width="200">
-    </div>
-    <nav>
-            <ul>
-                <li>Лабораторна робота №1</li>
-                <li>Лабораторна робота №2</li>
-                <li>Лабораторна робота №3</li>
-                <li>Лабораторна робота №4</li>
-                <li>Лабораторна робота №5</li>
-                <li>Лабораторна робота №6</li>
-                <li>Лабораторна робота №7</li>
-                <li>Лабораторна робота №8</li>
-                <li>Лабораторна робота №9</li>
-            </ul>
-    </nav>
-    <div class="wrapper">
-    <ul class="menu">
-        <li>
-            Тема. Мета. </br>Місце розташування сайту та звіту. 
-        </li>
-        <li>
-            Опис предметної області 
-        </li>
-        <li> 
-            Структура документу
-        </li>
-            <ul class="menu" id="inner">
-                <li>HTMsfdsfdfsdfL</li>
-                <li>HTML</li>
-                <li>HTML</li>
-                <li>HTML</li>
-            </ul>
-        <li>
-            Головна сторінка </br>WEB-застосунку
-        </li>
-        <li>Код головної сторінки </br>WEB-застосунку</li>
-    </ul>
-    <iframe src="">
+        <div class="work-list">
+            <button class="text">Компютерний практикум №1</button>
+            <button class="text">Компютерний практикум №2</button>
+        </div>
+        <div class="content grid grid_content">
+            <nav>
+                <ul>
+                    <li><button class="text">#</button></li>
+                    <li><button class="text">#</button></li>
+                    <li><button class="text">#</button></li>
+                    <ul>
+                        <li><button class="text">#</button></li>
+                        <li><button class="text">#</button></li>
+                        <li><button class="text">#</button></li>
+                    </ul>
+                    <li><button class="text">#</button></li>
+                    <li><button class="text">#</button></li>
+                </ul>
+            </nav>
+            <div class="display">
+                <iframe src="http://localhost/">
 
-    </iframe>
-    </div>
-    <footer>
-        e-mail: turchynskyi.d.y.-zpi51@edu.kpi.ua
-    </footer>
-</body>
+                </iframe>
+            </div>
+        </div>
+        <footer>
+            <p class="text">CONTACTS</p>
+        </footer>
+    </body>
 </html>

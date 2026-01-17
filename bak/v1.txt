@@ -1,0 +1,51 @@
+    <div class="wrapper">
+        <header>
+            <h1> Звіти з лабораторних робіт з дисципліни "Проектування web-застосунків"</h1>
+            <p>
+                Виконавець: Студент групи ІП-зп51 Турчинський Дмитро Юрійович
+            </p>
+        </header>
+        <img id="avatar" src="./media/photo.jpg" alt="Моє фото" height="200" width="200">
+    </div>
+    <nav>
+            <ul>
+                <li>Лабораторна робота №1</li>
+                <li>Лабораторна робота №2</li>
+                <li>Лабораторна робота №3</li>
+                <li>Лабораторна робота №4</li>
+                <li>Лабораторна робота №5</li>
+                <li>Лабораторна робота №6</li>
+                <li>Лабораторна робота №7</li>
+                <li>Лабораторна робота №8</li>
+                <li>Лабораторна робота №9</li>
+            </ul>
+    </nav>
+    <div class="wrapper">
+    <ul class="menu">
+        <li>
+            Тема. Мета. </br>Місце розташування сайту та звіту. 
+        </li>
+        <li>
+            Опис предметної області 
+        </li>
+        <li> 
+            Структура документу
+        </li>
+            <ul class="menu" id="inner">
+                <li>HTMsfdsfdfsdfL</li>
+                <li>HTML</li>
+                <li>HTML</li>
+                <li>HTML</li>
+            </ul>
+        <li>
+            Головна сторінка </br>WEB-застосунку
+        </li>
+        <li>Код головної сторінки </br>WEB-застосунку</li>
+    </ul>
+    <iframe width="70%" src="">
+
+    </iframe>
+    </div>
+    <footer>
+        e-mail: turchynskyi.d.y.-zpi51@edu.kpi.ua
+    </footer>
