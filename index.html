@@ -14,15 +14,15 @@
             <img class="avatar" src="./media/avatar.jpg" alt="MyPhoto" class="avatar">
         </header>
         <div class="work-list">
-            <button id="chek_lab1" class="">Компютерний практикум №1</button>
-            <button id="chek_lab2"class="">Компютерний практикум №2</button>
+            <button id="check_lab1" class="">Компютерний практикум №1</button>
+            <button id="check_lab2"class="">Компютерний практикум №2</button>
         </div>
         <div id="lab1" class="content grid grid_content active_content">
             <nav>
                 <ul>
                     <li><button id="btn_subject" class="active">Тема. Мета. Посилання на роботи.</button></li>
                     <li><button id="btn_logic" class="">Опис предметного середовища</button></li>
-                    <li><button class="">Структура докумету</button></li>
+                    <li><button id="btn_struct" class="">Структура докумету</button></li>
                     <li><button id="btn_page" class="">Головна сторінка застосунку</button></li>
                     <li><button id="btn_list">Код головної сторінки застосунку</button></li>
                 </ul>
@@ -80,6 +80,202 @@
                         <li>Надійність і безпека: обробка некоректного вводу, серверна перевірка даних, захист від ін’єкцій та XSS (на стороні серверу).</li>
                     </ul>
                 </section>
+                <section id="struct" class="report">
+                    <h3>Код таблиці</h3>
+                        <pre><code>
+                            &lt;table class=&quot;price-table&quot; aria-label=&quot;Прайс електроепіляції&quot;&gt;
+                            &lt;caption&gt;Ціни за зону&lt;/caption&gt;
+                            &lt;thead&gt;
+                                &lt;tr&gt;
+                                &lt;th scope=&quot;col&quot;&gt;Зона&lt;/th&gt;
+                                &lt;th scope=&quot;col&quot;&gt;Мін. час&lt;/th&gt;
+                                &lt;th scope=&quot;col&quot;&gt;Ціна від&lt;/th&gt;
+                                &lt;th scope=&quot;col&quot;&gt;Коментар&lt;/th&gt;
+                                &lt;/tr&gt;
+                            &lt;/thead&gt;
+                            &lt;tbody&gt;
+                                &lt;tr&gt;
+                                &lt;td&gt;Верхня губа&lt;/td&gt;
+                                &lt;td&gt;10–20 хв&lt;/td&gt;
+                                &lt;td&gt;300 грн&lt;/td&gt;
+                                &lt;td&gt;Точкова зона&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                &lt;td&gt;Підборіддя&lt;/td&gt;
+                                &lt;td&gt;15–30 хв&lt;/td&gt;
+                                &lt;td&gt;400 грн&lt;/td&gt;
+                                &lt;td&gt;За густотою волосся&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                &lt;td&gt;Щоки / баки&lt;/td&gt;
+                                &lt;td&gt;20–40 хв&lt;/td&gt;
+                                &lt;td&gt;500 грн&lt;/td&gt;
+                                &lt;td&gt;Можлива комбінована зона&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                &lt;td&gt;Пахви&lt;/td&gt;
+                                &lt;td&gt;30–60 хв&lt;/td&gt;
+                                &lt;td&gt;700 грн&lt;/td&gt;
+                                &lt;td&gt;Рекомендовано курс&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                &lt;td&gt;Бікіні класичне&lt;/td&gt;
+                                &lt;td&gt;40–70 хв&lt;/td&gt;
+                                &lt;td&gt;900 грн&lt;/td&gt;
+                                &lt;td&gt;Комфорт залежить від чутливості&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                &lt;td&gt;Бікіні глибоке&lt;/td&gt;
+                                &lt;td&gt;60–120 хв&lt;/td&gt;
+                                &lt;td&gt;1300 грн&lt;/td&gt;
+                                &lt;td&gt;Працюємо поетапно&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                &lt;td&gt;Гомілки&lt;/td&gt;
+                                &lt;td&gt;60–120 хв&lt;/td&gt;
+                                &lt;td&gt;1200 грн&lt;/td&gt;
+                                &lt;td&gt;Час залежить від площі&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                &lt;td&gt;Стегна&lt;/td&gt;
+                                &lt;td&gt;60–120 хв&lt;/td&gt;
+                                &lt;td&gt;1400 грн&lt;/td&gt;
+                                &lt;td&gt;Можна розділити на 2 сеанси&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                &lt;td&gt;Руки (до ліктя)&lt;/td&gt;
+                                &lt;td&gt;40–90 хв&lt;/td&gt;
+                                &lt;td&gt;1000 грн&lt;/td&gt;
+                                &lt;td&gt;Зона середньої складності&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                &lt;td&gt;Живіт (лінія)&lt;/td&gt;
+                                &lt;td&gt;20–40 хв&lt;/td&gt;
+                                &lt;td&gt;500 грн&lt;/td&gt;
+                                &lt;td&gt;Поодинокі/помірні волоски&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                &lt;td&gt;Спина (фрагмент)&lt;/td&gt;
+                                &lt;td&gt;30–90 хв&lt;/td&gt;
+                                &lt;td&gt;1100 грн&lt;/td&gt;
+                                &lt;td&gt;Залежить від ділянки&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                            &lt;tfoot&gt;
+                                &lt;tr&gt;
+                                &lt;td colspan=&quot;4&quot;&gt;
+                                    &lt;strong&gt;Мінімальна оплата сеансу:&lt;/strong&gt; 300 грн ·
+                                    &lt;strong&gt;Крок часу:&lt;/strong&gt; 10 хв ·
+                                    &lt;strong&gt;Консультація:&lt;/strong&gt; безкоштовно перед першим сеансом
+                                &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tfoot&gt;
+                            &lt;/table&gt;
+
+                        </code></pre>
+                    <h3>Код зображень</h3>
+                        <pre><code>
+                            &lt;img id=&quot;mp_logo&quot; src=&quot;./media/logo/logo.png&quot; alt=&quot;LOGO&quot;&gt;
+                            &lt;img src=&quot;./media/photo/3.jpg&quot; alt=&quot;&quot;&gt;
+                        </code></pre>
+                    <h3>Код форми</h3>
+                    <pre><code>
+                        &lt;form class=&quot;booking&quot; id=&quot;bookingForm&quot; novalidate&gt;
+                            &lt;div class=&quot;grid2&quot;&gt;
+                                &lt;label class=&quot;field&quot;&gt;
+                                &lt;span&gt;Ім’я *&lt;/span&gt;
+                                &lt;input type=&quot;text&quot; name=&quot;name&quot; placeholder=&quot;Ваше ім’я&quot; required minlength=&quot;2&quot;&gt;
+                                &lt;/label&gt;
+
+                                &lt;label class=&quot;field&quot;&gt;
+                                &lt;span&gt;Телефон *&lt;/span&gt;
+                                &lt;input type=&quot;tel&quot; name=&quot;phone&quot; placeholder=&quot;+380 XX XXX XX XX&quot; required
+                                        pattern=&quot;^\+?380\d{9}$|^\+?\d{10,15}$&quot;&gt;
+                                &lt;small class=&quot;hint&quot;&gt;Формат: +380XXXXXXXXX (або будь-який 10–15 цифр)&lt;/small&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;grid2&quot;&gt;
+                                &lt;label class=&quot;field&quot;&gt;
+                                &lt;span&gt;Зона *&lt;/span&gt;
+                                &lt;select name=&quot;zone&quot; required&gt;
+                                    &lt;option value=&quot;&quot; selected disabled&gt;Оберіть зону&lt;/option&gt;
+                                    &lt;option&gt;Верхня губа&lt;/option&gt;
+                                    &lt;option&gt;Підборіддя&lt;/option&gt;
+                                    &lt;option&gt;Пахви&lt;/option&gt;
+                                    &lt;option&gt;Бікіні класичне&lt;/option&gt;
+                                    &lt;option&gt;Бікіні глибоке&lt;/option&gt;
+                                    &lt;option&gt;Гомілки&lt;/option&gt;
+                                    &lt;option&gt;Руки&lt;/option&gt;
+                                    &lt;option&gt;Інше&lt;/option&gt;
+                                &lt;/select&gt;
+                                &lt;/label&gt;
+
+                                &lt;label class=&quot;field&quot;&gt;
+                                &lt;span&gt;Тривалість (орієнтовно)&lt;/span&gt;
+                                &lt;select name=&quot;duration&quot;&gt;
+                                    &lt;option&gt;10 хв&lt;/option&gt;
+                                    &lt;option&gt;30 хв&lt;/option&gt;
+                                    &lt;option&gt;60 хв&lt;/option&gt;
+                                    &lt;option&gt;90 хв&lt;/option&gt;
+                                    &lt;option&gt;120 хв&lt;/option&gt;
+                                &lt;/select&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;grid2&quot;&gt;
+                                &lt;label class=&quot;field&quot;&gt;
+                                &lt;span&gt;Бажана дата&lt;/span&gt;
+                                &lt;input type=&quot;date&quot; name=&quot;date&quot;&gt;
+                                &lt;/label&gt;
+
+                                &lt;label class=&quot;field&quot;&gt;
+                                &lt;span&gt;Бажаний час&lt;/span&gt;
+                                &lt;input type=&quot;time&quot; name=&quot;time&quot;&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+
+                            &lt;fieldset class=&quot;fieldset&quot;&gt;
+                                &lt;legend&gt;Як зручніше зв’язатися?&lt;/legend&gt;
+                                &lt;label class=&quot;radio&quot;&gt;
+                                &lt;input type=&quot;radio&quot; name=&quot;contact&quot; value=&quot;Телефон&quot; checked&gt;
+                                &lt;span&gt;Телефон&lt;/span&gt;
+                                &lt;/label&gt;
+                                &lt;label class=&quot;radio&quot;&gt;
+                                &lt;input type=&quot;radio&quot; name=&quot;contact&quot; value=&quot;Telegram&quot;&gt;
+                                &lt;span&gt;Telegram&lt;/span&gt;
+                                &lt;/label&gt;
+                                &lt;label class=&quot;radio&quot;&gt;
+                                &lt;input type=&quot;radio&quot; name=&quot;contact&quot; value=&quot;Viber&quot;&gt;
+                                &lt;span&gt;Viber&lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/fieldset&gt;
+
+                            &lt;label class=&quot;field&quot;&gt;
+                                &lt;span&gt;Коментар&lt;/span&gt;
+                                &lt;textarea name=&quot;comment&quot; rows=&quot;4&quot; placeholder=&quot;Наприклад: підвищена чутливість, зручний час, важливі нюанси...&quot;&gt;&lt;/textarea&gt;
+                            &lt;/label&gt;
+
+                            &lt;label class=&quot;check&quot;&gt;
+                                &lt;input type=&quot;checkbox&quot; name=&quot;firstTime&quot; value=&quot;Так&quot;&gt;
+                                &lt;span&gt;Це мій перший візит&lt;/span&gt;
+                            &lt;/label&gt;
+
+                            &lt;label class=&quot;check&quot;&gt;
+                                &lt;input type=&quot;checkbox&quot; name=&quot;consent&quot; required&gt;
+                                &lt;span&gt;Погоджуюсь на обробку персональних даних *&lt;/span&gt;
+                            &lt;/label&gt;
+
+                            &lt;div class=&quot;actions&quot;&gt;
+                                &lt;button class=&quot;btn primary&quot; type=&quot;submit&quot;&gt;Надіслати заявку&lt;/button&gt;
+                                &lt;a class=&quot;btn&quot; href=&quot;tel:+380000000000&quot;&gt;Подзвонити&lt;/a&gt;
+                            &lt;/div&gt;
+
+                            &lt;p class=&quot;status&quot; id=&quot;bookingStatus&quot; aria-live=&quot;polite&quot;&gt;&lt;/p&gt;
+                            &lt;/form&gt;
+
+                    </code></pre>
+                </section>
                 <section id="page" class="report">
                     <iframe src="https://turchynskyidy-zpi51-ux.github.io/epilia_studio/" ></iframe>
                 </section>
@@ -94,10 +290,10 @@
             <nav>
                 <ul>
                     <li><button id="btn_subject2" class="active">Тема. Мета. Посилання на роботи.</button></li>
-                    <li><button id="btn_inclusion" class="">Опис предметного середовища</button></li>
-                    <li><button id="selectors" class="">Структура докумету</button></li>
-                    <li><button id="advanced" class="">Головна сторінка застосунку</button></li>
-                    <li><button id="conclusion">Код головної сторінки застосунку</button></li>
+                    <li><button id="btn_inclusion" class="">Способи підключення стилів</button></li>
+                    <li><button id="selectors" class="">Селектори</button></li>
+                    <li><button id="advanced" class="">CSS</button></li>
+                    <li><button id="conclusion">Висновки</button></li>
                 </ul>
             </nav>
             <div class="display">

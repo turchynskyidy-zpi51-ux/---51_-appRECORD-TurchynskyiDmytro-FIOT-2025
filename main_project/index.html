@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Електроепіляція: консультація, прайс, запис онлайн. Охайно, стерильно, індивідуальний підхід." />
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="./scripts/app.js" defer></script>
     <title>Epilia</title>
@@ -11,71 +12,236 @@
     <header>
         <img id="mp_logo" src="./media/logo/logo.png" alt="LOGO">
         <h1>
-            Електроепіляція — видалення волосся назавжди.
+            Електроепіляція — точне видалення волосся назавжди
         </h1>
         <h2>
-            Безпечна робота по протоколу, стерильні витратні матеріали, індивідуальний підхід до кожної зони.
+            Працюємо делікатно, поетапно та з поясненнями.      
         </h2>
     </header>
-
-    <nav class="color_invert">
+    <nav class="inv_color">
         <ul>
-            <li><a href="#">«Що таке електроепіляція»</a></li>
-            <li><a href="#">«Як проходить процедура»</a></li>
-            <li><a href="#">«Протипоказання»</a></li>
-            <li><a href="#">«Підготовка до сеансу»</a></li>
-            <li><a href="#">«Догляд після процедури»</a></li>
+            <li id="btn_home" class="menu_btn"><a href=""></a>Дім</li>
+            <li id="btn_price" class="menu_btn"><a href=""></a>Ціни</li>
+            <li id="btn_form" class="menu_btn"><a href=""></a>Записатися</li>
         </ul>
     </nav>
-    
-        <div class="buttons_wrapper">
-            <button id="contact">Зв'язатись з нами</button>
-            <button>Записатись на процедуру</button>
-            <button>Як дістатися до нас</button>
+    <section id="home" class="content displaied">
+        <div class="text_wrapper">
+            <h2>Чому саме це?</h2>
+            <p>
+                Електроепіляція — це метод видалення волосся назавжди, при якому руйнується волосяний фолікул (корінь). Під час процедури майстер вводить у фолікул дуже тонкий одноразовий зонд (електрод) і подає короткий електроімпульс. Після цього волосинка легко видаляється пінцетом, а фолікул втрачає здатність відрощувати нове волосся.
+            </p>
+            <h3>Чому електроепіляція вважається “золотим стандартом”</h3>
+            <ul>
+                <li>Підходить для будь-якого кольору волосся (у тому числі світлого, сивого, пушкового) — на відміну від лазера.</li>
+                <li>Може застосовуватись на різних зонах: обличчя, пахви, бікіні, ноги, руки, живіт тощо.</li>
+                <li>Дозволяє працювати точково — видаляти окремі волоски там, де це потрібно.</li>
+            </ul>
+            <h3>Як проходить курс</h3>
+            <p>
+                Волосся росте циклами, тому за один сеанс неможливо обробити всі волоски — частина з них “спить”. Саме тому електроепіляцію проходять курсом: процедури повторюють з інтервалами, поступово прибираючи волосся, яке з’являється в активній фазі росту.
+            </p>
+            <h3>Відчуття та догляд</h3>
+            <p>
+                Відчуття під час процедури індивідуальні: зазвичай це легке поколювання або тепло. Після сеансу можливі почервоніння чи невелика набряклість — це нормальна реакція шкіри. Майстер обов’язково дає рекомендації з догляду: як обробляти зону, чого уникати перші дні та як швидше відновити шкіру.
+            </p>
         </div>
-        
-    <div class="content">
-        <div class="text">
-            sdfghsdngsnlkfgsod
-            gsdfghsdljgfld;gsdfghsdljgfld\
-            dgjiosjjfdsdsjgljks\
-           sogdl;kj;dskfg\sfg
-           sdghfgsljk; g
-        </div>
-        <div class="photos">
-            <img src="./media/photo/1.jpeg" alt="LOGO">
-            <img src="./media/photo/2.jpeg" alt="LOGO">
-            <img src="./media/photo/3.jpg" alt="LOGO">
-            <img src="./media/photo/4.png" alt="LOGO">
-        </div>
-    </div>
+        <img src="./media/photo/3.jpg" alt="">
+    </section>
 
-    <footer>
+    <section id="price" class="content">
+        <h2>Прайс на електроепіляцію</h2>
+        <p class="note">Тривалість та вартість залежать від густоти/зони та індивідуальних особливостей.</p>
 
+        <div class="table-wrap">
+            <table class="price-table" aria-label="Прайс електроепіляції">
+            <caption>Ціни за зону</caption>
+            <thead>
+                <tr>
+                <th scope="col">Зона</th>
+                <th scope="col">Мін. час</th>
+                <th scope="col">Ціна від</th>
+                <th scope="col">Коментар</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Верхня губа</td>
+                <td>10–20 хв</td>
+                <td>300 грн</td>
+                <td>Точкова зона</td>
+                </tr>
+                <tr>
+                <td>Підборіддя</td>
+                <td>15–30 хв</td>
+                <td>400 грн</td>
+                <td>За густотою волосся</td>
+                </tr>
+                <tr>
+                <td>Щоки / баки</td>
+                <td>20–40 хв</td>
+                <td>500 грн</td>
+                <td>Можлива комбінована зона</td>
+                </tr>
+                <tr>
+                <td>Пахви</td>
+                <td>30–60 хв</td>
+                <td>700 грн</td>
+                <td>Рекомендовано курс</td>
+                </tr>
+                <tr>
+                <td>Бікіні класичне</td>
+                <td>40–70 хв</td>
+                <td>900 грн</td>
+                <td>Комфорт залежить від чутливості</td>
+                </tr>
+                <tr>
+                <td>Бікіні глибоке</td>
+                <td>60–120 хв</td>
+                <td>1300 грн</td>
+                <td>Працюємо поетапно</td>
+                </tr>
+                <tr>
+                <td>Гомілки</td>
+                <td>60–120 хв</td>
+                <td>1200 грн</td>
+                <td>Час залежить від площі</td>
+                </tr>
+                <tr>
+                <td>Стегна</td>
+                <td>60–120 хв</td>
+                <td>1400 грн</td>
+                <td>Можна розділити на 2 сеанси</td>
+                </tr>
+                <tr>
+                <td>Руки (до ліктя)</td>
+                <td>40–90 хв</td>
+                <td>1000 грн</td>
+                <td>Зона середньої складності</td>
+                </tr>
+                <tr>
+                <td>Живіт (лінія)</td>
+                <td>20–40 хв</td>
+                <td>500 грн</td>
+                <td>Поодинокі/помірні волоски</td>
+                </tr>
+                <tr>
+                <td>Спина (фрагмент)</td>
+                <td>30–90 хв</td>
+                <td>1100 грн</td>
+                <td>Залежить від ділянки</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                <td colspan="4">
+                    <strong>Мінімальна оплата сеансу:</strong> 300 грн ·
+                    <strong>Крок часу:</strong> 10 хв ·
+                    <strong>Консультація:</strong> безкоштовно перед першим сеансом
+                </td>
+                </tr>
+            </tfoot>
+            </table>
+        </div>
+    </section>
+
+    <section id="form" class="content">
+        <form class="booking" id="bookingForm" novalidate>
+            <div class="grid2">
+                <label class="field">
+                <span>Ім’я *</span>
+                <input type="text" name="name" placeholder="Ваше ім’я" required minlength="2">
+                </label>
+
+                <label class="field">
+                <span>Телефон *</span>
+                <input type="tel" name="phone" placeholder="+380 XX XXX XX XX" required
+                        pattern="^\+?380\d{9}$|^\+?\d{10,15}$">
+                <small class="hint">Формат: +380XXXXXXXXX (або будь-який 10–15 цифр)</small>
+                </label>
+            </div>
+
+            <div class="grid2">
+                <label class="field">
+                <span>Зона *</span>
+                <select name="zone" required>
+                    <option value="" selected disabled>Оберіть зону</option>
+                    <option>Верхня губа</option>
+                    <option>Підборіддя</option>
+                    <option>Пахви</option>
+                    <option>Бікіні класичне</option>
+                    <option>Бікіні глибоке</option>
+                    <option>Гомілки</option>
+                    <option>Руки</option>
+                    <option>Інше</option>
+                </select>
+                </label>
+
+                <label class="field">
+                <span>Тривалість (орієнтовно)</span>
+                <select name="duration">
+                    <option>10 хв</option>
+                    <option>30 хв</option>
+                    <option>60 хв</option>
+                    <option>90 хв</option>
+                    <option>120 хв</option>
+                </select>
+                </label>
+            </div>
+
+            <div class="grid2">
+                <label class="field">
+                <span>Бажана дата</span>
+                <input type="date" name="date">
+                </label>
+
+                <label class="field">
+                <span>Бажаний час</span>
+                <input type="time" name="time">
+                </label>
+            </div>
+
+            <fieldset class="fieldset">
+                <legend>Як зручніше зв’язатися?</legend>
+                <label class="radio">
+                <input type="radio" name="contact" value="Телефон" checked>
+                <span>Телефон</span>
+                </label>
+                <label class="radio">
+                <input type="radio" name="contact" value="Telegram">
+                <span>Telegram</span>
+                </label>
+                <label class="radio">
+                <input type="radio" name="contact" value="Viber">
+                <span>Viber</span>
+                </label>
+            </fieldset>
+
+            <label class="field">
+                <span>Коментар</span>
+                <textarea name="comment" rows="4" placeholder="Наприклад: підвищена чутливість, зручний час, важливі нюанси..."></textarea>
+            </label>
+
+            <label class="check">
+                <input type="checkbox" name="firstTime" value="Так">
+                <span>Це мій перший візит</span>
+            </label>
+
+            <label class="check">
+                <input type="checkbox" name="consent" required>
+                <span>Погоджуюсь на обробку персональних даних *</span>
+            </label>
+
+            <div class="actions">
+                <button class="btn primary" type="submit">Надіслати заявку</button>
+                <a class="btn" href="tel:+380000000000">Подзвонити</a>
+            </div>
+
+            <p class="status" id="bookingStatus" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <footer class="inv_color">
+        <ln>Вникли питання? Зв'яжітся з нами: <tel>+38800553535</tel></ln>
     </footer>
-</body>
-
-<div id="form_background">
-
-</div> 
-<form id="contact_form">
-    <h1>
-        Leave your number and we will contact you in 10 min!
-    </h1>
-
-    <input
-        id="phone"
-        name="phone"
-        type="tel"
-        inputmode="tel"
-        autocomplete="tel"
-        placeholder="+380501234567"
-        required
-        pattern="^\+?[0-9\s\-\(\)]{7,20}$"
-        title="Введіть номер: +380501234567 (дозволені цифри, пробіли, дужки, дефіси)"
-    />
-
-        <button type="submit">Відправити</button>
-</form>
-
-</html>
+ </html>
