@@ -4,41 +4,109 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="./app.js" defer></script>
         <title>Дмитро Турчинський</title>
     </head>
     <body class="grid grid_main">
         <header class="grid grid_h">
-            <h1 class="text">Звіт з лабораторних робіт з дисципліни "Проєктування WEB-застосунків"</h1>
-            <h2 class="text">Виконавець: Студент групи ІП-зп51 Турчинський Дмитро Юрійович</h2>
+            <h1 class="">Звіт з лабораторних робіт з дисципліни "Проєктування WEB-застосунків"</h1>
+            <h2 class="">Виконавець: Студент групи ІП-зп51 Турчинський Дмитро Юрійович</h2>
             <img class="avatar" src="./media/avatar.jpg" alt="MyPhoto" class="avatar">
         </header>
         <div class="work-list">
-            <button class="text">Компютерний практикум №1</button>
-            <button class="text">Компютерний практикум №2</button>
+            <button id="chek_lab1" class="">Компютерний практикум №1</button>
+            <button id="chek_lab2"class="">Компютерний практикум №2</button>
         </div>
-        <div class="content grid grid_content">
+        <div id="lab1" class="content grid grid_content active_content">
             <nav>
                 <ul>
-                    <li><button class="text">#</button></li>
-                    <li><button class="text">#</button></li>
-                    <li><button class="text">#</button></li>
-                    <ul>
-                        <li><button class="text">#</button></li>
-                        <li><button class="text">#</button></li>
-                        <li><button class="text">#</button></li>
-                    </ul>
-                    <li><button class="text">#</button></li>
-                    <li><button class="text">#</button></li>
+                    <li><button id="btn_subject" class="active">Тема. Мета. Посилання на роботи.</button></li>
+                    <li><button id="btn_logic" class="">Опис предметного середовища</button></li>
+                    <li><button class="">Структура докумету</button></li>
+                    <li><button id="btn_page" class="">Головна сторінка застосунку</button></li>
+                    <li><button id="btn_list">Код головної сторінки застосунку</button></li>
                 </ul>
             </nav>
             <div class="display">
-                <iframe src="https://turchynskyidy-zpi51-ux.github.io/epilia_studio/">
-
-                </iframe>
+                <section id="subject" class="report report_active">
+                    <h1>Тема. Мета. Посилання на роботи.</h1>
+                    <h2>Посилання на репозиторії</h2>
+                    <a href="https://github.com/turchynskyidy-zpi51-ux/---51_-appRECORD-TurchynskyiDmytro-FIOT-2025">Репозиторій звіту</a><br>
+                    <a href="https://github.com/turchynskyidy-zpi51-ux/epilia_studio">Репозиторій застосунку</a>
+                    <h2>Посилання на GitHub Pages</h2>
+                    <a href="https://turchynskyidy-zpi51-ux.github.io/---51_-appRECORD-TurchynskyiDmytro-FIOT-2025/">Жива сторінка звіту</a><br>
+                    <a href="https://turchynskyidy-zpi51-ux.github.io/epilia_studio/">Жива сторінка застосунку</a>
+                    <h3>Тема власного WEB-застосунку</h3>
+                    <p>
+                        WEB-застосунок (сайт) для студії електроепіляції, 
+                        який містить інформацію про послуги, прайс, опис процедури, 
+                        протипоказання, відгуки та форму онлайн-запису клієнтів.
+                    </p>
+                    <h3>Мета створення власного WEB-застосунку</h3>
+                    <p>
+                        Мета розробки — створити зручний та інформативний веб-ресурс для 
+                        залучення клієнтів і автоматизації первинного запису на процедуру. 
+                        Сайт має допомогти користувачам швидко отримати інформацію про електроепіляцію, 
+                        переглянути ціни, дізнатися про підготовку/догляд та залишити заявку на візит.
+                    </p>
+                </section>
+                <section id="logic" class="report">
+                    <h3>Опис бізнес-логіки (скорочений опис предметного середовища)</h3>
+                    <p>
+                        Студія електроепіляції надає послуги з видалення волосся методом електроепіляції. 
+                        Клієнт обирає зону/послугу, переглядає інформацію про процедуру, прайс і рекомендації, 
+                        після чого заповнює форму запису (ім’я, телефон, зона, бажаний час, коментар). 
+                        Система передає заявку адміністратору (або зберігає в базі/CRM), адміністратор підтверджує запис 
+                        і узгоджує час. Після візиту клієнту надаються рекомендації по догляду та можливість залишити відгук.
+                    </p>
+                    <ul>
+                        <h3>Функціональні вимоги</h3>
+                        <li>Відображення основної інформації про студію, послуги та метод електроепіляції.</li>
+                        <li>Відображення прайсу у вигляді HTML-таблиці.</li>
+                        <li>Відображення контактів і посилань: телефон (tel:), email (mailto:), соціальні мережі.</li>
+                        <li>Наявність форми онлайн-запису на процедуру.</li>
+                        <li>Валідація обов’язкових полів форми (ім’я, телефон) та повідомлення про помилки.</li>
+                        <li>Валідація обов’язкових полів форми (ім’я, телефон) та повідомлення про помилки.</li>
+                        <li>Можливість перегляду розділу FAQ/протипоказань та рекомендацій до/після процедури.</li>
+                    </ul>
+                    <ul>
+                        <h3>
+                            Нефункціональні вимоги
+                        </h3>
+                        <li>Адаптивність інтерфейсу для мобільних пристроїв, планшетів та ПК.</li>
+                        <li>Зручність користування: логічна навігація, зрозумілі назви розділів, читабельні шрифти.</li>
+                        <li>Доступність: семантична розмітка, коректні заголовки, alt-тексти для зображень.</li>
+                        <li>Продуктивність: оптимізація зображень, мінімізація зайвих скриптів.</li>
+                        <li>Надійність і безпека: обробка некоректного вводу, серверна перевірка даних, захист від ін’єкцій та XSS (на стороні серверу).</li>
+                    </ul>
+                </section>
+                <section id="page" class="report">
+                    <iframe src="https://turchynskyidy-zpi51-ux.github.io/epilia_studio/" ></iframe>
+                </section>
+                <section id="list" class="report">
+                    <h1>Лістинг коду головної сторінки</h1>
+                     <pre><code class="codebox">Завантаження...</code></pre>
+                </section>
             </div>
+
+        </div>
+        <div id="lab2" class="content grid grid_content">
+            <nav>
+                <ul>
+                    <li><button id="btn_subject2" class="active">Тема. Мета. Посилання на роботи.</button></li>
+                    <li><button id="btn_inclusion" class="">Опис предметного середовища</button></li>
+                    <li><button id="selectors" class="">Структура докумету</button></li>
+                    <li><button id="advanced" class="">Головна сторінка застосунку</button></li>
+                    <li><button id="conclusion">Код головної сторінки застосунку</button></li>
+                </ul>
+            </nav>
+            <div class="display">
+
+            </div>
+
         </div>
         <footer>
-            <p class="text">CONTACTS</p>
+            <p class="">CONTACTS</p>
         </footer>
     </body>
 </html>
